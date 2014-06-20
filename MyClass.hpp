@@ -1,27 +1,31 @@
 //
 // This is some header with license, etc.
 //
-#ifndef MYCLASS_HPP
-#define MYCLASS_HPP TRUE
+#ifndef MYNAME_MYCLASS_HPP
+#define MYNAME_MYCLASS_HPP
 
-#include<string>
-#include<vector>
+#include <string>
+#include <vector>
 
-namespace myname {
+namespace myname
+{
 
-class MyClass {
+class MyClass
+{
 public:
-    MyClass();
-    ~MyClass();
+  MyClass();
+  ~MyClass();
 
-    void sayHello_();
-    int getAnswer_();
-    bool isVarReady_();
-    std::vector<std::string> complexMethod_();
+  void sayHello();
+  int getAnswer() const;
+  bool isVarReady() const;
+  std::vector<std::string> complexMethod();
+
 private:
-    int myInt_;
-    std::string myString_;
+  int myInt_;
+  std::string myString_;
 };
 
 } // namespace myname
-#endif // MYCLASS_HPP
+
+#endif // MYNAME_MYCLASS_HPP
